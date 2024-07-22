@@ -1,0 +1,39 @@
+samples_folder: "samples/chip-seq"
+sorted_samples_folder: "analysis/samples/chip-seq-sorted"
+merged_samples_folder: "analysis/samples/chip-seq-merged"
+intermediate_output_file: "analysis/output_bedfiles/chipseq_merged.bed"
+final_output_file: "analysis/output_bedfiles/chipseq_merged_and_region_merged.bed"
+top_n: 20000 #Number of peaks taken from every single ChIP-Seq sample to create the Gold Standard
+max_sample_count: 3 #Number of ChIP-Seq samples to create the gold standard
+gold_standard_folder: analysis/regions_by_sample_count
+comparison_input_folder: "samples/cuttag"
+# comparison_input_folder: "samples/cutrun"
+comparison_output_folder: "analysis/cuttag-sorted"
+# comparison_output_folder: "analysis/cutrun-sorted"
+comparison_plot_folder: "analysis/cuttag-sorted/plots"
+# comparison_plot_folder: "analysis/cutrun-sorted/plots"
+top_n_comparison: 1000000 # Change the value in case you are looking to analyze a certain amount of peaks from your CUT-TAG sample
+output_folder: "analysis/comparative_output"
+histogram_folder: "analysis/histograms"
+precision_recall_folder: "analysis/precision_recall"
+plot_folder: "analysis/cuttag-sorted/plots"
+# plot_folder: "analysis/cutrun-sorted/plots"
+
+### CUT-RUN
+# To use CUT-RUN samples as input instead of CUT-TAG:
+
+### Remove the '#' comment symbol from the following lines:
+## comparison_input_folder: "samples/cutrun"
+## comparison_output_folder: "analysis/cutrun-sorted"
+## comparison_plot_folder: "analysis/cutrun-sorted/plots"
+## plot_folder: "analysis/cutrun-sorted/plots"
+### Add a '#' comment symbol to the beginning of these lines:
+## comparison_input_folder: "samples/cuttag"
+## comparison_output_folder: "analysis/cuttag-sorted"
+## comparison_plot_folder: "analysis/cuttag-sorted/plots"
+## plot_folder: "analysis/cuttag-sorted/plots"
+
+
+# This will switch the configuration to use the CUT-RUN sample
+# directories instead of the CUT-TAG directories.
+# Make sure to save your changes after modifying the configuration file.
