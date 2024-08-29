@@ -16,7 +16,7 @@ This repository contains a Snakemake-based workflow for analyzing ChIP-seq data.
 
 ## Introduction
 
-This workflow is designed to process and analyze ChIP-seq data. It includes steps for processing bed files, generating gold standard regions, and performing comparative analysis between samples and gold standards.
+The developed workflow provide an automated and reproducible approach for the comparative analysis of ChIP-Seq samples. The modular design of the pipeline enables eficient data processing, gold standard generation, and comparative analysis tasks, facilitating the identification of significant regions and the evaluation of analysis performance. The precision-recall curves and F1 scores show how well the peak calling works and what the best threshold is for determining peak presence. It can be used to analyze various types of high-throughput sequencing data beyond ChIP-Seq. This workflows helps understand how TFs and HMs affect different conditions or cell types. This helps them make important discoveries in epigenetics and gene regulation.
 
 ## Installation
 
