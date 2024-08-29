@@ -76,10 +76,10 @@ top_n: 1000
 top_n_comparison: 1000
 max_sample_count: 10
 
-Contributing
+## Contributing
 
 Contributions to improve the workflow are welcome. Please submit a pull request or open an issue to discuss proposed changes.
 
-License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
