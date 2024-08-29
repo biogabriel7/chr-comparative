@@ -35,7 +35,7 @@ To run the workflow:
 
 snakemake analysis.snakefile --cores all
 
-#workflow-overview
+## Workflow Overview
 
 The workflow consists of three main modules:
 
