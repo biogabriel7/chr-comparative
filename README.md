@@ -33,7 +33,9 @@ pip install pandas numpy matplotlib seaborn pybedtools scikit-learn
 
 To run the workflow:
 
+```bash
 snakemake analysis.snakefile --cores all
+```
 
 ## Workflow Overview
 
@@ -49,14 +51,7 @@ Edit the config.yaml file to set parameters for your analysis:
 
 note: I do not recommend editing any path since it would require additional modifications to other files!
 
-samples_folder: "path/to/input/samples"
-gold_standard_folder: "path/to/gold/standard/output"
-comparison_input_folder: "path/to/comparison/input"
-comparison_output_folder: "path/to/comparison/output"
-plot_folder: "path/to/plot/output"
-top_n: 20000 (Number of peaks to consider from each sample to establish the gold standard)
-top_n_comparison: 100000
-max_sample_count: 10 (Number of samples used to create the gold standard)
+samples_folder: "path/to/input/samples"  gold_standard_folder: "path/to/gold/standard/output"  comparison_input_folder: "path/to/comparison/input"  comparison_output_folder: "path/to/comparison/output"  plot_folder: "path/to/plot/output"  top_n: 20000 (Number of peaks to consider from each sample to establish the gold standard)  top_n_comparison: 100000  max_sample_count: 10 (Number of samples used to create the gold standard)
 
 ## Output
 
