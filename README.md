@@ -14,11 +14,11 @@ This repository contains a Snakemake-based workflow for analyzing ChIP-seq data.
 8. [Contributing](#contributing)
 9. [License](#license)
 
-#introduction
+## Introduction
 
 This workflow is designed to process and analyze ChIP-seq data. It includes steps for processing bed files, generating gold standard regions, and performing comparative analysis between samples and gold standards.
 
-#installation
+## Installation
 
 To use this workflow, you need to have Snakemake installed. You can install Snakemake and other dependencies using conda:
 
@@ -29,7 +29,7 @@ conda install -c bioconda snakemake
 pip install pandas numpy matplotlib seaborn pybedtools scikit-learn
 ```
 
-#usage
+## Usage
 
 To run the workflow:
 
@@ -43,7 +43,7 @@ The workflow consists of three main modules:
 - Input Processing: Sorts and processes input a bed file for comparative analysis.
 - Comparative Analysis: Compares processed input files against gold standards.
 
-#configuration
+## Configuration
 
 Edit the config.yaml file to set parameters for your analysis:
 
@@ -58,14 +58,14 @@ top_n: 20000 (Number of peaks to consider from each sample to establish the gold
 top_n_comparison: 100000
 max_sample_count: 10 (Number of samples used to create the gold standard)
 
-#output
+## Output
 
 Processed and sorted bed files
 Gold standard
 Comparative analysis results
 Various plots (heatmaps, histograms, precision-recall curves)
 
-#scripts
+## Scripts
 
 samples_folder: "path/to/input/samples"
 gold_standard_folder: "path/to/gold/standard/output"
