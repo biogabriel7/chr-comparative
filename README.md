@@ -67,14 +67,15 @@ Various plots (heatmaps, histograms, precision-recall curves)
 
 ## Scripts
 
-samples_folder: "path/to/input/samples"
-gold_standard_folder: "path/to/gold/standard/output"
-comparison_input_folder: "path/to/comparison/input"
-comparison_output_folder: "path/to/comparison/output"
-plot_folder: "path/to/plot/output"
-top_n: 1000 
-top_n_comparison: 1000
-max_sample_count: 10
+process_bed_files.py: Processes and sorts bed files
+merge_bed_files.py: Merges bed files
+find_regions_sample.py: Finds regions present in samples
+split_regions_by_sample_count.py: Splits regions by sample count
+generate_heatmap.py: Generates heatmaps
+sort_input_comparative.py: Sorts input files for comparative analysis
+precision_recall.py: Calculates precision and recall
+plot_histogram.py: Plots histograms
+calculate_precision_recall.py: Calculates and plots precision-recall curves
 
 ## Contributing
 
